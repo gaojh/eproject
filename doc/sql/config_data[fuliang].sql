@@ -1,9 +1,9 @@
-set names gbk;
-insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(2,-1,1,'Ê¡','±±¾©ÊÐ','BJ',1,'U');
-insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(20001,2,3,'Çø/ÏØ','Î÷³ÇÇø','XCQ',1,'U');
-insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(2000101,20001,4,'½ÖµÀ/ÏçÕò','Î÷³¤°²½ÖµÀ','XCAJD',1,'U');
 
-insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(1,-1,1,'Ê¡','½­ËÕÊ¡','JS',2,'U');
-insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(101,1,2,'ÊÐ','ÄÏ¾©ÊÐ','NJ',1,'U');
-insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(10101,101,3,'Çø/ÏØ','ÐþÎäÇø','XWQ',1,'U');
-insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(1010101,10101,4,'½ÖµÀ/ÏçÕò','ÐþÎäºþ½ÖµÀ','XWHJD',1,'U');
+insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(2,-1,1,'Ê¡','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','BJ',1,'U');
+insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(20001,2,3,'ï¿½ï¿½/ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','XCQ',1,'U');
+insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(2000101,20001,4,'ï¿½Öµï¿½/ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½','XCAJD',1,'U');
+
+insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(1,-1,1,'Ê¡','ï¿½ï¿½ï¿½ï¿½Ê¡','JS',2,'U');
+insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(101,1,2,'ï¿½ï¿½','ï¿½Ï¾ï¿½ï¿½ï¿½','NJ',1,'U');
+insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(10101,101,3,'ï¿½ï¿½/ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','XWQ',1,'U');
+insert into e_district (id,parent_id,level,type,name,code,sequence,state) values(1010101,10101,4,'ï¿½Öµï¿½/ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½','XWHJD',1,'U');
