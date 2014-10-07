@@ -49,7 +49,7 @@ public class AddressServiceImpl implements AddressService {
 				if (address.getIsDefault().equals(Cons.bool.YES)) {
 					EAddress defaultAddress;
 
-					defaultAddress = findDefaultAddress();
+					defaultAddress = findDefaultAddress(address.getUserId());
 					defaultAddress.setIsDefault(Cons.bool.NO);
 					dao.update(defaultAddress);
 				}
@@ -69,7 +69,7 @@ public class AddressServiceImpl implements AddressService {
 				if (address.getIsDefault().equals(Cons.bool.YES)) {
 					EAddress defaultAddress;
 
-					defaultAddress = findDefaultAddress();
+					defaultAddress = findDefaultAddress(address.getUserId());
 					defaultAddress.setIsDefault(Cons.bool.NO);
 					dao.update(defaultAddress);
 				}
@@ -88,9 +88,11 @@ public class AddressServiceImpl implements AddressService {
 	}
 
 	@Override
-	public EAddress findDefaultAddress() {
-		return dao.fetch(EAddress.class,
-				Cnd.where("isDefault", "=", Cons.bool.YES));
+	public EAddress findDefaultAddress(long userId) {
+		return dao.fetch(
+				EAddress.class,
+				Cnd.where("isDefault", "=", Cons.bool.YES).and("userId", "=",
+						userId));
 	}
 
 	@Override

@@ -31,6 +31,14 @@ public interface AddressService {
 	public int getAddressCountByUser(long userId);
 
 	/**
+	 * 获取默认地址
+	 * 
+	 * @param userId
+	 * @return
+	 */
+	public EAddress findDefaultAddress(long userId);
+
+	/**
 	 * 新增收货地址
 	 * 
 	 * @param address
@@ -53,12 +61,5 @@ public interface AddressService {
 	 * @return
 	 */
 	public int removeAddress(EAddress address);
-
-	/**
-	 * 获取默认地址
-	 * 
-	 * @return
-	 */
-	public EAddress findDefaultAddress();
 
 }
