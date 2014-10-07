@@ -349,9 +349,6 @@
 	<c:if test="${count > 0}">
 		<div class="row" style="margin-bottom: 10px">
 			<div class="col-sm-2">
-				<!-- <button id="add_btn" anchor="editDiv"
-					class="btn btn-default btn-sm btn-block col-left" type="button">新增配送地址</button> -->
-
 				<button id="add_btn"
 					class="btn btn-default btn-sm btn-block col-left" type="button">新增配送地址</button>
 			</div>
@@ -413,7 +410,7 @@
 				id="address_remark"> <input type="hidden" id="address_state">
 		</div>
 		<div class="container">
-			<form id="userDataForm" method="post" class="form-horizontal"
+			<form id="DataForm" method="post" class="form-horizontal"
 				role="form">
 				<div class="row form-group" style="padding-top: 20px;">
 					<label class="col-sm-1 control-label text-right">所在地区： </label>

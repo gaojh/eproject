@@ -106,7 +106,6 @@ public class MenuModule {
 	@Fail("jsp:views.login")
 	public List<EAddress> openMyAddress(@Attr("ENONG_USER") EUser user) {
 		List<EAddress> list = addressService.findAddressByUser(user.getId());
-		log.debug(list.size());
 		return list;
 	}
 

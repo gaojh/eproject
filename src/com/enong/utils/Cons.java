@@ -78,4 +78,8 @@ public class Cons {
 		public static int MAX = 20;
 	}
 
+	public static class bankcard {
+		public static int MAX = 20;
+	}
+
 }
