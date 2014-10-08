@@ -21,6 +21,7 @@ Date.prototype.format = function(format) {
 	return format;
 }
 
+
 String.prototype.trim = function() {
 	return this.replace(/(^\s*)|(\s*$)/g, "");
 }
